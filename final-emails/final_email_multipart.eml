@@ -1,0 +1,32 @@
+From: Our Company <ediel@ourcompany.se>
+To: Utility Contact <ediel@recipient-utility.se>
+Subject: PRODAT UNB+UNOC:3+12345:ZZ+67890:ZZ+220101:1200+MSG001++23-DDQ-PRODAT++1'
+Date: Tue, 22 Jul 2025 14:58:16 +0300
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="====1753185496===="
+
+--====1753185496====
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Please find attached the encrypted PRODAT message.
+
+--====1753185496====
+Content-Type: application/pkcs7-mime; smime-type=enveloped-data; name="prodat.p7m"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="prodat.p7m"
+
+MIICkQYJKoZIhvcNAQcDoIICgjCCAn4CAQAxggGYMIIBlAIBADB8MGQxHTAbBgNVBAMMFEVESUVM
+IFJlY2lwaWVudCBUZXN0MRAwDgYDVQQKDAdUZXN0T3JnMQswCQYDVQQGEwJTRTEkMCIGCSqGSIb3
+DQEJARYVcmVjaXBpZW50QGV4YW1wbGUuY29tAhRMkm/Mrp1eCaEPe9LFGL+gerELKjANBgkqhkiG
+9w0BAQEFAASCAQB1G3Ceq56UmLe6uFGlaubt5dpvr0kVZoEiX2MnkY1Mp78tEzFeMzM4WUgJOwEQ
+D8h7vkOc/+NdJh7IqIPw1CcJ15TO6K/ZEXUdu7oNiwRLfstmwWfOcHbdN5PAIx1vfjguHfGKdANG
+p6F88h0E1cm44mjGMa+maRMLwX6UJnHGp89A1IXOO88660ufyGqn2w+ifT/sxwP0HEY7AFYVnK4c
+7B3TPueLCacFzH42CDQhYOoQiL3GzMDEDzY7EkaFY78RJuFXTyzhcQPtm8Cj3LbKLdHcO7slyXTW
+TYYTkhTdGq/NXdSlI6cyd8upuWgXKsowahBnbUxD93zaXtV/nlJZMIHcBgkqhkiG9w0BBwEwFAYI
+KoZIhvcNAwcECNyjvAvyeQwbgIG4KEElEeASdjMKPq7W32BCvkpzhB96ePgMa5SIGnpEO9/SyE8M
+YJ2Xd+7w162XoIltfFYk+Q0A4Ira82qf2l4V9ctRopodEEnbH2yQ3WzgZu8Ro1Eoil6hQP6OwClg
+YvQo8XtMi8MPYQRxpGDMhB8TaG4AJnEjtO8JQEmcLDaaMFkObBKLy11EGd66oAYjogUd6uGY6YSA
+WJ5ZPP09VoATp9z6pKhVpZKxZGVGIlSZeJeBCyjPrlQ7hg==
+
+--====1753185496====--
