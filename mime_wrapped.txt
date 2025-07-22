@@ -1,0 +1,8 @@
+Content-Type: application/EDIFACT
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="edifact"
+
+VU5BOisuPyAnClVOQitVTk9DOjMrMTIzNDU6WlorNjc4OTA6WlorMjIwMTAxOjEyMDArTVNHMDAx
+KysyMy1ERFEtUFJPREFUKysxJwpVTkgrMStQUk9EQVQ6RTJTRTVBOlVOOkVESUVMMicKQkdNK1ow
+MytNU0cwMDErOScKRFRNKzEzNzoyMDIyMDEwMToxMDInClVOVCsxMCsxJwpVTlorMStNU0cwMDEn
+Cg==
