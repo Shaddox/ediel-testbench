@@ -8,7 +8,7 @@ set -euo pipefail
 EDIFACT_FILE="${1:-edifact_message.edi}"       # EDIFACT input file
 OUTPUT_FILE="${2:-encrypted_ediel_der.eml}"  # Output email or raw DER file
 
-RECIPIENT_CERT_DIR="./keys"    # Directory containing recipient_*.pem certificates
+RECIPIENT_CERT_DIR="./keys/recipient"    # Directory containing recipient_*.pem certificates
 
 CREATE_EMAIL="yes"             # Set to "no" for raw DER only
 SENDER_EMAIL="ediel@sender.com"

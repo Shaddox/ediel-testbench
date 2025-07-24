@@ -10,7 +10,7 @@ OUTPUT_FILE="${2:-encrypted_ediel_der.eml}"
 
 SENDER_KEY="./keys/our_key.pem"
 SENDER_CERT="./keys/our_cert.pem"
-RECIPIENT_CERT_DIR="./keys"    # where recipient_*.pem live
+RECIPIENT_CERT_DIR="./keys/recipient"    # where recipient_*.pem live
 
 CREATE_EMAIL="yes"
 SENDER_EMAIL="ediel@sender.com"
