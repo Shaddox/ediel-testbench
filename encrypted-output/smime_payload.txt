@@ -1,8 +1,3 @@
-MIME-Version: 1.0
-Content-Disposition: attachment; filename="smime.p7m"
-Content-Type: application/x-pkcs7-mime; smime-type=enveloped-data; name="smime.p7m"
-Content-Transfer-Encoding: base64
-
 MIINcwYJKoZIhvcNAQcDoIINZDCCDWACAQAxggGYMIIBlAIBADB8MGQxHTAbBgNV
 BAMMFEVESUVMIFJlY2lwaWVudCBUZXN0MRAwDgYDVQQKDAdUZXN0T3JnMQswCQYD
 VQQGEwJTRTEkMCIGCSqGSIb3DQEJARYVcmVjaXBpZW50QGV4YW1wbGUuY29tAhRM

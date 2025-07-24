@@ -1,7 +1,12 @@
+From: "Our Company" <ediel@ourcompany.se>
+To: "Utility Contact" <ediel@recipient-utility.se>
+Subject: PRODAT UNB+UNOC:3+12345:ZZ+67890:ZZ+220101:1200+MSG001++23-DDQ-PRODAT++1'
+Date: Thu, 24 Jul 2025 12:54:01 +0300
+Message-ID: <1753350841.3368@ourcompany.se>
 MIME-Version: 1.0
-Content-Disposition: attachment; filename="smime.p7m"
-Content-Type: application/x-pkcs7-mime; smime-type=enveloped-data; name="smime.p7m"
+Content-Type: application/pkcs7-mime; smime-type=enveloped-data; name="smime.p7m"
 Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="smime.p7m"
 
 MIINcwYJKoZIhvcNAQcDoIINZDCCDWACAQAxggGYMIIBlAIBADB8MGQxHTAbBgNV
 BAMMFEVESUVMIFJlY2lwaWVudCBUZXN0MRAwDgYDVQQKDAdUZXN0T3JnMQswCQYD
