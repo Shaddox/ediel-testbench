@@ -6,16 +6,16 @@ set -euo pipefail
 # ============================================
 
 # Input/Output files
-EDIFACT_FILE="${1:-./messages/edifact.edi}"  # First argument or default
-OUTPUT_FILE="${2:-encrypted_ediel.eml}"   # Second argument or default
+EDIFACT_FILE="${1:-./messages/secret.edi}"  # First argument or default
+OUTPUT_FILE="${2:-./simulated-received-message/encrypted_ediel.eml}"   # Second argument or default
 
 # Directory containing recipient certificates
-RECIPIENT_CERT_DIR="./keys/recipient-cert"
+RECIPIENT_CERT_DIR="./keys/our-cert"
 
 # Email configuration (optional, for full email format)
 CREATE_EMAIL="yes"  # Set to "no" for S/MIME only
-SENDER_EMAIL="ediel@sender.com"
-RECIPIENT_EMAIL="ediel@recipient.com"
+SENDER_EMAIL="ediel@recipient.com"
+RECIPIENT_EMAIL="ediel@sender.com"
 
 # ============================================
 # VALIDATION & CERTIFICATE PREPARATION
@@ -28,7 +28,7 @@ if [ ! -f "$EDIFACT_FILE" ]; then
 fi
 
 # Gather recipient certs
-mapfile -t all_certs < <(find "$RECIPIENT_CERT_DIR" -type f -name "recipient_*.pem")
+mapfile -t all_certs < <(find "$RECIPIENT_CERT_DIR" -type f -name "our_*.pem")
 if [ ${#all_certs[@]} -eq 0 ]; then
     echo "❌ Error: No recipient certificates found in $RECIPIENT_CERT_DIR"
     exit 1
