@@ -2,8 +2,15 @@ encrypt-binary-mime-body :
 
 produces a smime email as an encrypted binary
 
-Sample Usage : 
+Sample Usage for encryption : 
 
 ```shell
-./fixed-encrypt.sh ./base-message/edifact_message.edi ./final-emails/please-work.eml
+./fixed-encrypt-nosign.sh INPUT.edi OUTPUT.eml
+./encrypt-ediel-clean.sh INPUT.edi OUTPUT.eml
+```
+
+Sample Usage for decryption
+
+```shell
+./decrypt-received-message.sh INPUT.eml OUTPUT.edi
 ```
