@@ -1,3 +1,7 @@
 fixed-encypt-nosign.sh
 
 EDIEL Accepted
+
+TO TEST :
+./decrypt-received-message.sh INPUT.eml OUTPUT.edi
+./debug-decrypt.sh INPUT.eml OUTPUT.edi
