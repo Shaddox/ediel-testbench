@@ -12,7 +12,7 @@ OUTPUT_FILE="${2:-encrypted_ediel.eml}"     # Output email or S/MIME file
 # Directories and certificates
 SENDER_KEY="./keys/our_key.pem"
 SENDER_CERT="./keys/our_cert.pem"
-RECIPIENT_CERT_DIR="./keys/recipient"         # Directory containing all recipient_*.pem files
+RECIPIENT_CERT_DIR="./keys"         # Directory containing all recipient_*.pem files
 
 # Email configuration
 CREATE_EMAIL="yes"  # "no" for raw S/MIME only

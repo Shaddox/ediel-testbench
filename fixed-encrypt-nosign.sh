@@ -10,7 +10,7 @@ EDIFACT_FILE="${1:-edifact_message.edi}"  # First argument or default
 OUTPUT_FILE="${2:-encrypted_ediel.eml}"   # Second argument or default
 
 # Directory containing recipient certificates
-RECIPIENT_CERT_DIR="./keys/recipient"
+RECIPIENT_CERT_DIR="./keys/recipient-cert"
 
 # Email configuration (optional, for full email format)
 CREATE_EMAIL="yes"  # Set to "no" for S/MIME only
