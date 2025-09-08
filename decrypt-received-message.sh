@@ -31,8 +31,20 @@ openssl smime -decrypt \
   -out "$TMP/inner.mime"
 
 # 2) Extract the inner MIME body (handles CRLF and whitespace-only separator line)
-awk 'BEGIN{b=0} { gsub(/\r$/,""); if(!b){ if($0 ~ /^[[:space:]]*$/){b=1; next} } else { print } }' \
-  "$TMP/inner.mime" > "$TMP/edifact.b64"
+# AWK Sacred magic -> Use as a last resort
+#gsub(/\r$/,""): removes a trailing \r character (so \r\n → \n), because MIME headers are CRLF-terminated.
+#if(!b): while b=0, we’re scanning the header section.
+#if($0 ~ /^[[:space:]]*$/): if the line is completely blank (only whitespace), that’s the separator between headers and body.
+#At that point we flip b=1 (now in body) and next to skip the blank separator.
+#else { print }: once in body (b=1), we print every line into edifact.b64.
+# awk 'BEGIN{b=0} { gsub(/\r$/,""); if(!b){ if($0 ~ /^[[:space:]]*$/){b=1; next} } else { print } }' \
+# "$TMP/inner.mime" > "$TMP/edifact.b64"
+# tr -d '\r' : convert CRLF to LF
+# sed -n '/^$/,$p' :  print from the first blank line to the end
+# sed '1d' : drop the first blank line
+tr -d '\r' < "$TMP/inner.mime" \
+  | sed -n '/^$/,$p' \
+  | sed '1d' > "$TMP/edifact.b64"
 
 # 3) Decode base64 body to .edi
 base64 -di "$TMP/edifact.b64" > "$OUT_EDI"
